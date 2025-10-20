@@ -67,8 +67,8 @@ const Portfolio = () => {
 
 
   return (
-    <div className="w-screen h-screen bg-[#0F0F0F]">
-      <nav className="w-screen h-14 md:h-16 bg-black flex fixed z-50">
+    <div className="w-full h-screen bg-[#0F0F0F]">
+      <nav className="w-full h-14 md:h-16 bg-black flex fixed z-50">
         <div className="w-fit flex items-center gap-2 pl-10 md:pl-20">
           <img src={logo} alt="logo" className="w-10" />
         </div>
@@ -203,7 +203,7 @@ const Portfolio = () => {
         </div>
       </nav>
 
-      <section ref={homeRef} className="bg-[#0F0F0F] w-screen h-screen  flex md:flex-row justify-center items-center lg:p-30 md:p-20">
+      <section ref={homeRef} className="bg-[#0F0F0F] w-full h-screen  flex md:flex-row justify-center items-center lg:p-30 md:p-20">
         <div className="w-full md:100 lg:h-120 mt-15 flex flex-col md:flex-row text-center md:text-start">
             <div className="leftside order-2 md:order-1 flex-1 p-10 pt-0 lg:p-20 md:pt-15 flex flex-col items-center md:items-start">
                 <p className="text-2xl md:text-5xl lg:text-6xl text-white/80 w-120 font-bold">Hi, I'm <span className="text-[#D4AF37]">Jhon Pet Varquez</span></p>
@@ -219,12 +219,12 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section ref={aboutRef} className="w-screen h-fit text-center text-white/80 bg-[#0F0F0F] p-10 pt-30 md:p-40">
+      <section ref={aboutRef} className="w-full h-fit text-center text-white/80 bg-[#0F0F0F] p-10 pt-30 md:p-40">
         <h1 className="text-4xl font-bold text-[#D4AF37]">About Me</h1>
         <p className="pt-10 md:pt-20 md:p-10 text-xl md:text-xl lg:text-2xl">I’m Jhon Pet Varquez, a 22-year-old Bachelor of Science in Agribusiness graduate from Gingoog City United Colleges. I’m passionate about agribusiness, sustainability, and community development. During my studies, I gained valuable experience through my On-the-Job Training at the Medina Agriculture Office, where I assisted in agricultural programs and farmer-related activities. I also volunteered in livestock vaccination drives, which strengthened my leadership and teamwork skills. I am a fast learner with strong communication, adaptability, and management abilities. As a new agribusiness professional, I aspire to apply my knowledge to help improve farm productivity, support local agripreneurs, and promote sustainable agricultural growth.</p>
       </section>
 
-      <section ref={projectsRef} className="bg-[#0F0F0F] w-screen h-fit flex flex-col items-center pt-30 md:pt-30 pb-30 md:grid-cols-2">
+      <section ref={projectsRef} className="bg-[#0F0F0F] w-full h-fit flex flex-col items-center pt-30 md:pt-30 pb-30 md:grid-cols-2">
         <h1 className="text-4xl font-bold text-[#D4AF37]">My projects</h1>
         <p className="text-white/80 mt-10 p-10 pt-0 pb-0 text-center">A collection of my agribusiness projects that highlight my experience, innovation, and dedication to promoting sustainable practices.</p>
         
@@ -264,11 +264,11 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section ref={skillsRef} className="bg-green-600 w-screen h-screen flex flex-col items-center pt-30">
+      <section ref={skillsRef} className="bg-green-600 w-full h-screen flex flex-col items-center pt-30">
         <h1 className="text-4xl font-bold text-[#D4AF37]">My Skills</h1>
       </section>
-      <section ref={achievementsRef} className="bg-purple-600 w-screen h-screen"></section>
-      <section ref={contactRef} className="bg-pink-600 w-screen h-screen"></section>
+      <section ref={achievementsRef} className="bg-purple-600 w-full h-screen"></section>
+      <section ref={contactRef} className="bg-pink-600 w-full h-screen"></section>
     </div>
   );
 };
