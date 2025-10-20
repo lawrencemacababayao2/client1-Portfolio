@@ -68,7 +68,7 @@ const Portfolio = () => {
 
   return (
     <div className="w-full min-h-screen bg-[#0F0F0F] overflow-x-hidden">
-      <nav className="w-full h-14 md:h-16 bg-black flex fixed z-50 overflow-hidden">
+      <nav className="w-full h-14 md:h-16 bg-black flex fixed z-50">
         <div className="w-fit flex items-center gap-2 pl-10 md:pl-20">
           <img src={logo} alt="logo" className="w-10" />
         </div>
