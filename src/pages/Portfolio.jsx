@@ -205,7 +205,7 @@ const Portfolio = () => {
 
       <section ref={homeRef} className="bg-[#0F0F0F] w-screen h-screen  flex md:flex-row justify-center items-center lg:p-30 md:p-20">
         <div className="w-full md:100 lg:h-120 mt-15 flex flex-col md:flex-row text-center md:text-start">
-            <div className="leftside order-2 md:order-1 flex-1 p-10 pt-0 lg:p-20 md:pt-15 flex flex-col items-center md:items-start  border-2 border-white">
+            <div className="leftside order-2 md:order-1 flex-1 p-10 pt-0 lg:p-20 md:pt-15 flex flex-col items-center md:items-start">
                 <p className="text-2xl md:text-5xl lg:text-6xl text-white/80 w-120 font-bold">Hi, I'm <span className="text-[#D4AF37]">Jhon Pet Varquez</span></p>
                 <p className="text-white/80 mt-5 text-xl font-normal">Agribusiness graduate dedicated to sustainable and innovative approaches in agriculture.</p>
                 <button onClick={() => scrollTo(aboutRef)} className="p-2 w-40 mt-15 bg-[#D4AF37] hover:bg-[#a2862b] cursor-pointer rounded-sm">Learn More.</button>
@@ -228,35 +228,35 @@ const Portfolio = () => {
         <h1 className="text-4xl font-bold text-[#D4AF37]">My projects</h1>
         <p className="text-white/80 mt-10 p-10 pt-0 pb-0 text-center">A collection of my agribusiness projects that highlight my experience, innovation, and dedication to promoting sustainable practices.</p>
         
-        <div className="w-full h-400 md:h-210 lg:h-125 lg:pt-5 lg:p-20 gap-10 md:gap-10 lg:gap-10 md:p-10 md:pt-0 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-10 pt-0 pb-0 ">
+        <div className="border-2 border-white w-full h-full lg:pt-5 lg:p-20 gap-10 md:gap-10 lg:gap-10 md:p-10 md:pt-0 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-10 pt-0 pb-0 ">
 
           <div className="h-full flex-1 rounded-2xl bg-white/80 hover:shadow-[0_0_20px_#D4AF37] transition-shadow duration-300 cursor-pointer">
-            <div className="w-full h-60 flex-1 rounded-2xl bg-black ">
-              <img src={project1} alt="" className="w-full h-full object-cover rounded-2xl " />
+            <div className="w-full h-full flex-1 rounded-2xl bg-white/80 ">
+              <img src={project1} alt="" className="w-full h-60 object-cover rounded-2xl " />
               <h1 className="ml-5 mt-3 text-xl font-bold">Final Thesis</h1>
               <p className="m-5 mt-2 text-justify">A study on the population and morphometric characteristics of sea urchins in Gingoog City’s coastal areas to assess environmental impacts.</p>
             </div>
           </div>
 
           <div className="h-full flex-1 rounded-2xl bg-white/80 hover:shadow-[0_0_20px_#D4AF37] transition-shadow duration-300 cursor-pointer">
-            <div className="w-full h-60 flex-1 rounded-2xl bg-black">
-              <img src={project2} alt="" className="w-full h-full object-cover rounded-2xl " />
+            <div className="w-full h-full flex-1 rounded-2xl bg-white/80">
+              <img src={project2} alt="" className="w-full h-60 object-cover rounded-2xl " />
               <h1 className="m-5 mt-3 mb-0 text-md font-bold">Soil Preparation and Mulching</h1>
               <p className="m-5 mt-2 text-justify">During the OJT, We Performed soil preparation and mulching as part of sustainable farming practice.</p>
             </div>
           </div>
 
           <div className="h-full flex-1 rounded-2xl bg-white/80 hover:shadow-[0_0_20px_#D4AF37] transition-shadow duration-300 cursor-pointer">
-            <div className="w-full h-60 flex-1 rounded-2xl bg-black">
-              <img src={project3} alt="" className="w-full h-full object-cover rounded-2xl " />
+            <div className="w-full h-full flex-1 rounded-2xl bg-white/80">
+              <img src={project3} alt="" className="w-full h-60 object-cover rounded-2xl " />
               <h1 className="ml-5 mt-3 text-xl font-bold">Giving Vitamins to Cattle</h1>
               <p className="m-5 mt-2 text-justify">Gave vitamin supplements to cattle as part of livestock care training.</p>
             </div>
           </div>
 
           <div className="h-full flex-1 rounded-2xl bg-white/80 hover:shadow-[0_0_20px_#D4AF37] transition-shadow duration-300 cursor-pointer">
-            <div className="w-full h-60 flex-1 rounded-2xl bg-black">
-              <img src={project4} alt="" className="w-full h-full object-cover rounded-2xl " />
+            <div className="w-full h-full flex-1 rounded-2xl bg-white/80">
+              <img src={project4} alt="" className="w-full h-60 object-cover rounded-2xl " />
               <h1 className="ml-5 mt-3 text-md font-bold">Coconut Farmer Registration</h1>
               <p className="m-5 mt-2 text-justify">Helped facilitate the registration of coconut tree owners in the community.</p>
             </div>
