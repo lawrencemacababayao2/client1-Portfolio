@@ -203,10 +203,10 @@ const Portfolio = () => {
         </div>
       </nav>
 
-      <section ref={homeRef} className="bg-[#0F0F0F] w-screen h-screen flex md:flex-row justify-center items-center lg:p-30 md:p-20">
+      <section ref={homeRef} className="bg-[#0F0F0F] w-screen h-screen  flex md:flex-row justify-center items-center lg:p-30 md:p-20">
         <div className="w-full md:100 lg:h-120 mt-15 flex flex-col md:flex-row text-center md:text-start">
-            <div className="leftside order-2 md:order-1 flex-1 pt-0 lg:p-20 md:pt-15">
-                <p className="text-3xl md:text-5xl lg:text-6xl text-white/80 w-120 font-bold">Hi, I'm <span className="text-[#D4AF37]">Jhon Pet Varquez</span></p>
+            <div className="leftside order-2 md:order-1 flex-1 p-10 pt-0 lg:p-20 md:pt-15 flex flex-col items-center md:items-start  border-2 border-white">
+                <p className="text-2xl md:text-5xl lg:text-6xl text-white/80 w-120 font-bold">Hi, I'm <span className="text-[#D4AF37]">Jhon Pet Varquez</span></p>
                 <p className="text-white/80 mt-5 text-xl font-normal">Agribusiness graduate dedicated to sustainable and innovative approaches in agriculture.</p>
                 <button onClick={() => scrollTo(aboutRef)} className="p-2 w-40 mt-15 bg-[#D4AF37] hover:bg-[#a2862b] cursor-pointer rounded-sm">Learn More.</button>
             </div>
@@ -219,7 +219,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section ref={aboutRef} className="w-screen h-screen text-center text-white/80 bg-[#0F0F0F] p-10 pt-30 md:p-40">
+      <section ref={aboutRef} className="w-screen h-fit text-center text-white/80 bg-[#0F0F0F] p-10 pt-30 md:p-40">
         <h1 className="text-4xl font-bold text-[#D4AF37]">About Me</h1>
         <p className="pt-10 md:pt-20 md:p-10 text-xl md:text-xl lg:text-2xl">I’m Jhon Pet Varquez, a 22-year-old Bachelor of Science in Agribusiness graduate from Gingoog City United Colleges. I’m passionate about agribusiness, sustainability, and community development. During my studies, I gained valuable experience through my On-the-Job Training at the Medina Agriculture Office, where I assisted in agricultural programs and farmer-related activities. I also volunteered in livestock vaccination drives, which strengthened my leadership and teamwork skills. I am a fast learner with strong communication, adaptability, and management abilities. As a new agribusiness professional, I aspire to apply my knowledge to help improve farm productivity, support local agripreneurs, and promote sustainable agricultural growth.</p>
       </section>
@@ -228,10 +228,10 @@ const Portfolio = () => {
         <h1 className="text-4xl font-bold text-[#D4AF37]">My projects</h1>
         <p className="text-white/80 mt-10 p-10 pt-0 pb-0 text-center">A collection of my agribusiness projects that highlight my experience, innovation, and dedication to promoting sustainable practices.</p>
         
-        <div className="w-full h-400 md:h-210 lg:h-125 lg:pt-5 lg:p-20 md:gap-10 lg:gap-10 md:p-10 md:pt-0 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-10 pt-0 pb-0 gap-10">
+        <div className="w-full h-400 md:h-210 lg:h-125 lg:pt-5 lg:p-20 gap-10 md:gap-10 lg:gap-10 md:p-10 md:pt-0 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-10 pt-0 pb-0 ">
 
           <div className="h-full flex-1 rounded-2xl bg-white/80 hover:shadow-[0_0_20px_#D4AF37] transition-shadow duration-300 cursor-pointer">
-            <div className="w-full h-60 flex-1 rounded-2xl bg-black">
+            <div className="w-full h-60 flex-1 rounded-2xl bg-black ">
               <img src={project1} alt="" className="w-full h-full object-cover rounded-2xl " />
               <h1 className="ml-5 mt-3 text-xl font-bold">Final Thesis</h1>
               <p className="m-5 mt-2 text-justify">A study on the population and morphometric characteristics of sea urchins in Gingoog City’s coastal areas to assess environmental impacts.</p>
