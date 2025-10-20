@@ -86,7 +86,7 @@ const Portfolio = () => {
 
   {/* Dropdown Menu */}
   {menuOpen && (
-    <div className="flex flex-col overflow-hidden w-60 rounded-2xl bg-black text-white mt-16 absolute right-5 top-0 transition-all duration-300 shadow-lg shadow-[#D4AF37]/40">
+    <div className="flex flex-col overflow-hidden w-60 rounded-bl-2xl bg-black text-white mt-14 absolute right-0 top-0 transition-all duration-300 shadow-lg shadow-[#D4AF37]/40">
       <a
         href="#home"
         onClick={() => {
