@@ -228,7 +228,7 @@ const Portfolio = () => {
         <h1 className="text-4xl font-bold text-[#D4AF37]">My projects</h1>
         <p className="text-white/80 mt-10 p-10 pt-0 pb-0 text-center">A collection of my agribusiness projects that highlight my experience, innovation, and dedication to promoting sustainable practices.</p>
         
-        <div className="border-2 border-white w-full h-full lg:pt-5 lg:p-20 gap-10 md:gap-10 lg:gap-10 md:p-10 md:pt-0 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-10 pt-0 pb-0 ">
+        <div className="w-full h-full lg:pt-5 lg:p-20 gap-10 md:gap-10 lg:gap-10 md:p-10 md:pt-0 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-10 pt-0 pb-0 ">
 
           <div className="h-full flex-1 rounded-2xl bg-white/80 hover:shadow-[0_0_20px_#D4AF37] transition-shadow duration-300 cursor-pointer">
             <div className="w-full h-full flex-1 rounded-2xl bg-white/80 ">
