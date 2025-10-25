@@ -241,7 +241,7 @@ const Portfolio = () => {
             </div>
 
             <div className="rightside flex-1 order-1 md:order-2 justify-center flex p-5 md:p-5">
-                <div className="w-80 md:w-80 lg:w-105 border-3 border-[#D4AF37] rounded-full overflow-hidden bg-black">
+                <div className="size-70 md:size-80 lg:size-105 border-3 border-[#D4AF37] rounded-full overflow-hidden bg-black">
                     <img src={profilepic} alt="" className="h-full w-full object-cover"/>
                 </div>
             </div>
