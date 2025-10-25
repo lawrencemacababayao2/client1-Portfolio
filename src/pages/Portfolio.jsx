@@ -332,7 +332,7 @@ const Portfolio = () => {
 
       <section ref={contactRef} className="bg-[#0F0F0F] w-full h-fit flex-col items-center pt-30 grid grid-cols-1 md:grid-cols-2 p-5 md:p-40 gap-30 text-white/90 pb-10 ">
         <div className="w-full h-120 mr-5 md:mr-0">
-          <h1 className="text-5xl font-bold text-[#D4AF37] mt-10">Let's Connect</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#D4AF37] mt-10">Let's Connect</h1>
           <p className="pt-10">Feel free to reach out for collaborations, projects, or inquiries.</p>
           
           <div className="w-full h-fit flex mt-10 gap-5 items-center">
