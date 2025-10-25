@@ -77,6 +77,7 @@ const Portfolio = () => {
         </div>
         <div className="w-fit flex justify-start">
             <div className="relative md:hidden" ref={menuRef}>
+
   {/* Burger Icon */}
   <FontAwesomeIcon
     icon={faBars}
@@ -264,11 +265,45 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section ref={skillsRef} className="bg-green-600 w-full h-screen flex flex-col items-center pt-30">
+      <section ref={skillsRef} className="bg-[#0F0F0F] w-full h-fit flex flex-col items-center pt-30 text-center">
         <h1 className="text-4xl font-bold text-[#D4AF37]">My Skills</h1>
+        <p className="pt-10 text-white/90">A showcase of my technical and agricultural competencies, developed through academic training and hands-on field experience.</p>
+
+        <div className="w-full h-fit grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 p-10 pt-20 lg:p-10 mb-40">
+
+
+          <div className="w-full h-full bg-[#1d1d1d] text-center p-10 pt-0 rounded-xl">
+            <h1 className="text-2xl p-5 text-[#D4AF37] font-semibold">Communication</h1>
+            <p className="text-white/90">Effective in conveying thoughts clearly and listening to others.</p>
+            <div className="w-full bg-gray-700 rounded-full h-2 mt-10">
+              <div className="bg-[#D4AF37] h-2 rounded-full w-[85%]"></div>
+            </div>
+          </div>
+          
+          <div className="w-full h-full bg-[#1d1d1d] text-center p-10 pt-0 rounded-xl">
+            <h1 className="text-2xl p-5 text-[#D4AF37] font-semibold">Fast Learner</h1>
+            <p className="text-white/90">Quickly grasp new concepts and skills with enthusiasm.</p>
+            <div className="w-full bg-gray-700 rounded-full h-2 mt-10">
+              <div className="bg-[#D4AF37] h-2 rounded-full w-[85%]"></div>
+            </div>
+          </div>
+
+          <div className="w-full h-full bg-[#1d1d1d] text-center p-10 pt-0 rounded-xl">
+            <h1 className="text-2xl p-5 text-[#D4AF37] font-semibold">Flexible</h1>
+            <p className="text-white/90">Ability to lead and inspire teams toward achieving goals.</p>
+            <div className="w-full bg-gray-700 rounded-full h-2 mt-10">
+              <div className="bg-[#D4AF37] h-2 rounded-full w-[85%]"></div>
+            </div>
+          </div>
+
+        </div>
       </section>
-      <section ref={achievementsRef} className="bg-purple-600 w-full h-screen"></section>
-      <section ref={contactRef} className="bg-pink-600 w-full h-screen"></section>
+      <section ref={achievementsRef} className="bg-green-600 w-full h-screen flex flex-col items-center pt-30">
+        <h1 className="text-4xl font-bold text-[#D4AF37]">My Achievements</h1>
+      </section>
+      <section ref={contactRef} className="bg-green-600 w-full h-screen flex flex-col items-center pt-30">
+        <h1 className="text-4xl font-bold text-[#D4AF37]">Contact Me</h1>
+      </section>
     </div>
   );
 };
