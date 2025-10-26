@@ -233,7 +233,7 @@ const Portfolio = () => {
             <div className="leftside order-2 md:order-1 flex-1 p-10 pt-0 lg:p-20 md:pt-15 flex flex-col items-center md:items-start">
                 <p className="text-2xl md:text-5xl lg:text-6xl text-white/80 w-120 font-bold">Hi, I'm <span className="text-[#D4AF37]">Jhon Pet Varquez</span></p>
                 <p className="text-white/80 mt-5 text-xl font-normal">Agribusiness graduate dedicated to sustainable and innovative approaches in agriculture.</p>
-                <button onClick={() => scrollTo(aboutRef)} className="p-2 w-40 mt-5 md:mt-15 bg-[#D4AF37] hover:bg-[#a2862b] cursor-pointer rounded-sm">Learn More.</button>
+                <button onClick={() => scrollTo(aboutRef)} className="p-2 w-60 md:w-40 mt-5 md:mt-15 bg-[#D4AF37] hover:bg-[#a2862b] cursor-pointer rounded-sm">Learn More.</button>
             </div>
 
             <div className="rightside flex-1 order-1 md:order-2 justify-center flex p-5 md:p-5">
