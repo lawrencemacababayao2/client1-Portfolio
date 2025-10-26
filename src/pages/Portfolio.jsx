@@ -10,6 +10,11 @@ import project1 from '../assets/project1.jpg'
 import project2 from '../assets/project2.jpg'
 import project3 from '../assets/project3.jpg'
 import project4 from '../assets/project4.jpg'
+import thesis from '../assets/THESIS_FINAL_PAPER.pdf'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const Portfolio = () => {
   const homeRef = useRef(null);
@@ -21,6 +26,15 @@ const Portfolio = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
+
+  useEffect(() => {
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: false,     // animate only once
+    mirror: true,
+    easing: "ease-in-out",
+  });
+}, []);
 
   useEffect(() => {
   const handleClickOutside = (event) => {
@@ -56,6 +70,8 @@ const Portfolio = () => {
 
 
   const handleScroll = () => {
+    AOS.refresh();
+
     if (scrolling) return;
     sections.forEach((section) => {
       const top = section.ref.current.getBoundingClientRect().top;
@@ -169,19 +185,6 @@ const Portfolio = () => {
       </a>
 
       <a
-        href="#achievements"
-        onClick={() => {
-          scrollTo(achievementsRef);
-          setMenuOpen(false);
-        }}
-        className={`pl-5 pt-3 pb-3 text-xl transition-colors duration-200 ${
-          active === "achievements" ? "bg-yellow-500 text-black" : "hover:bg-yellow-500/30"
-        }`}
-      >
-        Achievements
-      </a>
-
-      <a
         href="#contact"
         onClick={() => {
           scrollTo(contactRef);
@@ -219,11 +222,6 @@ const Portfolio = () => {
               </a>
             </li>
             <li>
-              <a href="#achievements" onClick={() => scrollTo(achievementsRef)} className={linkClass("achievements")}>
-                Achievements
-              </a>
-            </li>
-            <li>
               <a href="#contact" onClick={() => scrollTo(contactRef)} className={linkClass("contact")}>
                 Contact
               </a>
@@ -232,7 +230,7 @@ const Portfolio = () => {
         </div>
       </nav>
 
-      <section ref={homeRef} className="bg-[#0F0F0F] w-full h-screen  flex md:flex-row justify-center items-center lg:p-30 md:p-20">
+      <section ref={homeRef} data-aos="fade" className="bg-[#0F0F0F] w-full h-screen  flex md:flex-row justify-center items-center lg:p-30 md:p-20">
         <div className="w-full md:100 lg:h-120 mt-15 flex flex-col md:flex-row text-center md:text-start">
             <div className="leftside order-2 md:order-1 flex-1 p-10 pt-0 lg:p-20 md:pt-15 flex flex-col items-center md:items-start">
                 <p className="text-2xl md:text-5xl lg:text-6xl text-white/80 w-120 font-bold">Hi, I'm <span className="text-[#D4AF37]">Jhon Pet Varquez</span></p>
@@ -248,12 +246,12 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section ref={aboutRef} className="w-full h-fit text-center text-white/80 bg-[#0F0F0F] p-10 pt-30 md:p-40">
+      <section ref={aboutRef} data-aos="fade" className="w-full h-fit text-center text-white/80 bg-[#0F0F0F] p-10 pt-30 md:p-40">
         <h1 className="text-4xl font-bold text-[#D4AF37]">About Me</h1>
         <p className="pt-10 md:pt-20 md:p-10 text-xl md:text-xl lg:text-2xl">I’m Jhon Pet Varquez, a 22-year-old Bachelor of Science in Agribusiness graduate from Gingoog City United Colleges. I’m passionate about agribusiness, sustainability, and community development. During my studies, I gained valuable experience through my On-the-Job Training at the Medina Agriculture Office, where I assisted in agricultural programs and farmer-related activities. I also volunteered in livestock vaccination drives, which strengthened my leadership and teamwork skills. I am a fast learner with strong communication, adaptability, and management abilities. As a new agribusiness professional, I aspire to apply my knowledge to help improve farm productivity, support local agripreneurs, and promote sustainable agricultural growth.</p>
       </section>
 
-      <section ref={projectsRef} className="bg-[#0F0F0F] w-full h-fit flex flex-col items-center pt-30 md:pt-30 pb-30 md:grid-cols-2">
+      <section ref={projectsRef} data-aos="fade" className="bg-[#0F0F0F] w-full h-fit flex flex-col items-center pt-30 md:pt-30 pb-30 md:grid-cols-2">
         <h1 className="text-4xl font-bold text-[#D4AF37]">My projects</h1>
         <p className="text-white/90 mt-10 p-10 pt-0 pb-0 text-center">A collection of my agribusiness projects that highlight my experience, innovation, and dedication to promoting sustainable practices.</p>
         
@@ -261,7 +259,9 @@ const Portfolio = () => {
 
           <div className="h-full flex-1 rounded-2xl bg-[#0F0F0F] hover:shadow-[0_0_20px_#D4AF37] transition-shadow duration-300 cursor-pointer">
             <div className="w-full h-full flex-1 rounded-2xl bg-[#0F0F0F] ">
-              <img src={project1} alt="" className="w-full h-60 object-cover rounded-2xl " />
+              <a href={thesis} target="blank">
+              <img  src={project1} alt="" className="w-full h-60 object-cover rounded-2xl " />
+              </a>
               <h1 className="ml-5 mt-3 text-xl font-bold text-white/90">Final Thesis</h1>
               <p className="m-5 mt-2 text-justify text-white/90">A study on the population and morphometric characteristics of sea urchins in Gingoog City’s coastal areas to assess environmental impacts.</p>
             </div>
@@ -293,7 +293,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section ref={skillsRef} className="bg-[#0F0F0F] w-full h-fit flex flex-col items-center pt-30 text-center">
+      <section ref={skillsRef} data-aos="fade" className="bg-[#0F0F0F] w-full h-fit flex flex-col items-center pt-30 text-center">
         <h1 className="text-4xl font-bold text-[#D4AF37]">My Skills</h1>
         <p className="pt-10 text-white/90">A showcase of my technical and agricultural competencies, developed through academic training and hands-on field experience.</p>
 
@@ -326,11 +326,8 @@ const Portfolio = () => {
 
         </div>
       </section>
-      <section ref={achievementsRef} className="bg-[#1d1d1d] w-full h-screen flex flex-col items-center pt-30">
-        <h1 className="text-4xl font-bold text-[#D4AF37]">My Achievements</h1>
-      </section>
 
-      <section ref={contactRef} className="bg-[#0F0F0F] w-full h-fit flex-col items-center pt-30 grid grid-cols-1 md:grid-cols-2 p-5 md:p-40 gap-30 text-white/90 pb-10 ">
+      <section ref={contactRef} data-aos="fade" className="bg-[#0F0F0F] w-full h-fit flex-col items-center pt-30 grid grid-cols-1 md:grid-cols-2 p-5 md:p-40 gap-30 text-white/90 pb-10 ">
         <div className="w-full h-120 mr-5 md:mr-0">
           <h1 className="text-4xl md:text-5xl font-bold text-[#D4AF37] mt-10">Let's Connect</h1>
           <p className="pt-10">Feel free to reach out for collaborations, projects, or inquiries.</p>
@@ -361,8 +358,8 @@ const Portfolio = () => {
           
           <div className="w-full h-fit flex mt-10 items-center text-3xl gap-5">
             <a href="https://www.facebook.com/jhonpet.varquez.29" target="blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.facebook.com/jhonpet.varquez.29" target="blank"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://www.facebook.com/jhonpet.varquez.29" target="blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/jv_062903/?__pwa=1" target="blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.tiktok.com/@rintarokyotani?is_from_webapp=1&sender_device=pc" target="blank"><i class="fa-brands fa-tiktok"></i></a>
           </div>
 
         </div>
@@ -383,7 +380,7 @@ const Portfolio = () => {
           <textarea placeholder="Message..." className="w-full h-45 border-1 border-white/20 bg-[#1d1d1d] mt-5 outline-none text-lg p-5 rounded-md resize-none">
           </textarea>
 
-          <button className="w-full h-12 bg-[#D4AF37] text-black font-semibold text-md cursor-pointer mt-5 rounded-md">Send Message</button>
+          <button className="w-full h-12 bg-[#D4AF37] text-black font-semibold text-md cursor-pointer mt-5 rounded-md hover:bg-[#9d8228] transition-all duration-300">Send Message</button>
         </form>
       </section>
       <footer className="w-full h-20 bg-[#0F0F0F] text-center flex items-center justify-center text-white/60">
