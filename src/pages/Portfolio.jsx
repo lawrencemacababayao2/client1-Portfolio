@@ -21,7 +21,6 @@ const Portfolio = () => {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const skillsRef = useRef(null);
-  const achievementsRef = useRef(null);
   const contactRef = useRef(null);
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,7 +55,6 @@ const Portfolio = () => {
     { id: "about", ref: aboutRef },
     { id: "projects", ref: projectsRef },
     { id: "skills", ref: skillsRef },
-    { id: "achievements", ref: achievementsRef },
     { id: "contact", ref: contactRef },
   ];
 
