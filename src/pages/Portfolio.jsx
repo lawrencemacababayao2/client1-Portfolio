@@ -27,6 +27,10 @@ const Portfolio = () => {
   const menuRef = useRef(null);
 
   useEffect(() => {
+    document.title = "Jhon Pet Varquez Portfolio";
+  }, []);
+
+  useEffect(() => {
   AOS.init({
     duration: 1000, // animation duration in ms
     once: false,     // animate only once
